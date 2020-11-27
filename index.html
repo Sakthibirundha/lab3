@@ -1,0 +1,77 @@
+<html>
+<link href="style.css" rel="stylesheet"></link>
+<head>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<div ng-app="myApp">
+<div ng-controller="myCtrl">
+<style>
+body {
+  background-image: url('image2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+</style>
+    <h2>
+        <center><h1 style="color:black">PRACTICE QUIZ</h1></center>
+    </h2>
+<ul style="background-color:midnightblue">
+
+<li><a href="index.html">HOME</a></li>
+ <li><a href="studycard.html">STUDY CARD</a></li>
+ <li><a href="create.html">TAKE QUIZ</a></li>
+ <li><a href="log.html">LOGIN</a></li>
+ <li><a href="register.php"></a></li>
+</ul>
+
+<br> 
+<br> 
+<br> 
+
+<br>
+<center>	 <input id="chshow" type="checkbox" ng-model="show" /> 
+          
+        <label for="chshow"> 
+		<b> Trending news of the day:</b>
+            
+        </label> 
+          
+        <p ng-show="show" style="background:mediumvioletred; color: white;  
+                font-size: 14px; width:35%; padding: 10px;"> 
+				"Andhara Pradesh celebrates the GIRLS CHILD DAY by nominating girl child as 1 day government staff,ordered by CM"
+            
+        </p></center> <br><br>
+
+
+
+
+<center> <h2>Here are the some of the tips to crack your competitive exams <h2><br>
+   <p style="color: black;  
+                font-size: 17px; width:35%; padding: 10px;"> 1.Set your goal of interest.<br> <br>
+2.Prepare atleast 1 hour a day .<br> <br> 3.Make a shedule and implement it well.</p></center>
+<br>
+
+
+<center><h2>To add the topics which you need quiz more</h2> </center>
+<center><a href="fact.html">Click here to post your Topics</a></center>
+<br>
+<b><center>		<p>{{timeofday}},{{greet}}!!!!</p>
+		
+<div ng-controller="yrctrl">
+<b><center>		<p>{{timeofday}},{{greet}}!!!!</p>
+		
+</center>
+</div>
+</div>
+
+</div>
+</body>
+</html>

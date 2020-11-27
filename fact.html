@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='ControllerAsApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="fac.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Custom Service</title>
+  </head>
+  <body>
+    <h1>Enter your Quiz Topics</h1>
+
+    <div id="list2" ng-controller='Topicslist2 as list2'>
+      <h3>Topics list(limited to 5 )</h3>
+     
+      <input type="text" ng-model="list2.Topics" placeholder="Topics">
+      <button ng-click="list2.addItem();">Add Item</button>
+      <ol>
+        <li ng-repeat="item in list2.items">
+          {{ item.Topics }}
+          <button ng-click="list2.removeItem($index);">Remove Item</button>
+        </li>
+      </ol>
+      <div class="error">Error: {{list2.errorMessage}}</div>
+    </div>
+
+  </body>
+</html>

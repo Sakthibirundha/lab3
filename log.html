@@ -1,0 +1,42 @@
+<html>
+<link href="style1.css" rel="stylesheet"></link>
+<head>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+</head>
+
+<style>
+body {
+  background-image: url('ima7.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+</style>
+<body>
+<center><h1 style="color:aquamarine;">LOGIN FORM </h1></center>
+
+<form>
+ <div class="container">
+  <center><font size = "5"> <label for="uname" style="color:silver;" ><b>Username</b></label></font><br><br>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+	<font size = "5"><label for="psw" style="color:white;"><b>Password</b></label></font><br><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+    <button class="black" type="submit">Login</button><br><br>
+    <font size = "5"><label style="color:white;">
+      <input type="checkbox" checked="checked" name="remember" > Remember me
+    </label></font></center><br><br>
+  </div>
+<center>
+  <div class="container" >
+    <button class="black" type="button" class="cancelbtn">Cancel</button><br><br>
+    <span class="psw" style="color:white;">Forgot <a href="#"style="color:red;">password?</a></span><br><br>
+  </div>
+  </center>
+</form>
+
+</body>
+</html>
